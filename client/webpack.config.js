@@ -24,8 +24,7 @@ module.exports = () => {
 
       new InjectManifest({
         swSrc: './src-sw.js',
-        // TODO: verify sdDest file
-        swDest: 'src-sw.js',
+        swDest: 'service-worker.js',
       }),
 
       new WebpackPwaManifest({
@@ -41,7 +40,7 @@ module.exports = () => {
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
-            destination: path.join('assets', 'icon'),
+            destination: path.join('assets', 'icons'),
           }
         ]
       }),
