@@ -29,8 +29,6 @@ registerRoute(({ request }) => request.mode === 'navigate', pageCache);
 // Implemented asset caching
 
 registerRoute(
-  // defines filter parameters for the callback function
-  // ({ request }) => ['style', 'script', 'worker'].includes(request.destination),
   ({ request }) => request.destination === 'image',
     new CacheFirst({
     cacheName: 'my-asset-cache',
