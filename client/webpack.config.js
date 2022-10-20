@@ -28,14 +28,14 @@ module.exports = () => {
       }),
 
       new WebpackPwaManifest({
+        inject: true,
+        fingerprints: false,
         name: 'PWA Text Editor',
         short_name: 'J.A.T.E.',
         description: 'Just Another Text Editor',
         background_color: '#ffffff',
-        start_url: '/',
         publicPath: '/',
-        inject: true,
-        fingerprints: false,
+        start_url: '.',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
