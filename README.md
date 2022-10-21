@@ -11,9 +11,9 @@ This is a progressive web application that can function in a browser operating b
 ## Tech Use
 Heroku, Express, IndexedDB, Webpack & WebpackPwaManifest Plugins, Concurrently, Babel, and Babel extensions.
 
-[Heroku Deployed Link]()
+[Heroku Deployed Link](https://desolate-taiga-69412.herokuapp.com/)
 
-[GitHub Repository]()
+[GitHub Repository](https://github.com/Zachattack221/Progressive-Web-Applications-PWA-Text-Editor)
 ## Installation
 Run 'npm i' within the console, located at the root level of the directory. This will pull in the necessary node modules/packages from the root, client, and server level package.json files. 
 
